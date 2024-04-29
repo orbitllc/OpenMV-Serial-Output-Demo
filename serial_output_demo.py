@@ -13,12 +13,10 @@ from pyb import UART
 import time
 
 clock = time.clock()
-uart = pyb.UART(3, 9600)  # UART(3) on pins P4 (TX) and P5 (RX), baudrate 9600
-#uart = pyb.UART(1, 9600)  # UART(1) on pins P1 (TX) and P0 (RX), baudrate 9600
+uart = pyb.UART(3, 9600)    # UART(3) on pins P4 (TX) and P5 (RX), baudrate 9600
+#uart = pyb.UART(1, 9600)   # UART(1) on pins P1 (TX) and P0 (RX), baudrate 9600
 
-
-print_interval = 1 # Print to UART every [print_interval] seconds
-
+print_interval = 1          # Print to UART every [print_interval] seconds
 
 while True:
     clock.tick()
